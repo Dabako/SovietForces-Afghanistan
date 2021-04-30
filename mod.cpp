@@ -1,0 +1,9 @@
+ name 			= "Limited contingency of Soviet Forces (Afghanistan)"; // Name of your mod
+ author 		= "Dabako & Herodroggel"; // Affects Arma 3 Launcher, when the mod are loaded as local
+ tooltip 		= "SFA";
+ tooltipOwned 	= "Limited contingency of Soviet Forces (Afghanistan)"; // Tool tip displayed when the mouse is left over, in the main menu
+ actionName 	= "GitHub";
+ action 		= "https://github.com/Dabako/SovietForces-Afghanistan"; // Website URL, that can be accessed from the expansions menu
+ overview 		= "A small Alpha preset mod for Soviet Forces in Afghanistan"; // Supports structured text
+ hideName 		= 1; // Hide the extension name
+ hidePicture	= 1;	// Hide the extension menu
