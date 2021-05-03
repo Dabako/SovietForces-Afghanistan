@@ -2,7 +2,7 @@ class cfgPatches
 {
   class SFA_Limited_contingency_of_Soviet_Forces_Afghanistan
   {
-    units[]={"SFA_AT_Specialist","SFA_Efreitor","SFA_Engineer","SFA_Grenadier_RPG","SFA_Grenadier_Assistant","SFA_Junior_Sergeant","SFA_Machine_Gunner","SFA_Machine_Gunner_Assistant","SFA_Marksman","SFA_Medic","SFA_Officer","SFA_Officer_Armored","SFA_Rifleman","SFA_Rilfeman_GP25","SFA_Rifleman_RPG18","SFA_Rifleman_RShG2","SFA_Sergeant","SFA_Rifleman_Light","SFA_Driver_Armored","SFA_Krew","SFA_Crew_Armored","SFA_crew_commander","SFA_rriver","SFA_BTR_70","SFA_BTR_80","SFA_D30A","SFA_D_30A_AT","SFA_Podnos","SFA_BM21","SFA_S1","SFA_S3M1","SFA_UAZ_3151","SFA_UAZ_3151_Open","SFA_BMP_2D","SFA_BMP_1D","SFA_BMP_2_1980g","SFA_GAZ_66","SFA_GAz_66_Ammo","SFA_GAZ_66_Flatbed","SFA_GAZ_66_OpenFlatbed","SFA_GAZ_66_R_142N","SFA_GAZ_66_ZU_23_2","SFA_GAZ_66_AP_2","SFA_GAZ_66_ESB_8IM","SFA_Ural_4320","SFA_Ural_4320_Flatbed","SFA_Ural_4320_Open","SFA_Ural_4320_Fuel","SFA_Ural_4320_Open_Flatbed","SFA_Ural_4320_Repair","SFA_Ural_4320_ZU_23_2","SFA_AGS_17","SFA_KORD","SFA_KORD_High","SFA_NSV","SFA_SPG9_M","SFA_ZU232","SFA_ZSU234V","SFA_P_37","SFA_PRV13"};
+    units[]={"SFA_AT_Specialist","SFA_Efreitor","SFA_Engineer","SFA_Grenadier_RPG","SFA_Grenadier_Assistant","SFA_Junior_Sergeant","SFA_Machine_Gunner","SFA_Machine_Gunner_Assistant","SFA_Marksman","SFA_Medic","SFA_Officer","SFA_Officer_Armored","SFA_Rifleman","SFA_Rilfeman_GP25","SFA_Rifleman_RPG18","SFA_Rifleman_RShG2","SFA_Sergeant","SFA_Rifleman_Light","SFA_Driver_Armored","SFA_crew","SFA_Crew_Armored","SFA_crew_commander","SFA_rriver","SFA_BTR_70","SFA_BTR_80","SFA_D30A","SFA_D_30A_AT","SFA_Podnos","SFA_BM21","SFA_S1","SFA_S3M1","SFA_UAZ_3151","SFA_UAZ_3151_Open","SFA_BMP_2D","SFA_BMP_1D","SFA_BMP_2_1980g","SFA_GAZ_66","SFA_GAz_66_Ammo","SFA_GAZ_66_Flatbed","SFA_GAZ_66_OpenFlatbed","SFA_GAZ_66_R_142N","SFA_GAZ_66_ZU_23_2","SFA_GAZ_66_AP_2","SFA_GAZ_66_ESB_8IM","SFA_Ural_4320","SFA_Ural_4320_Flatbed","SFA_Ural_4320_Open","SFA_Ural_4320_Fuel","SFA_Ural_4320_Open_Flatbed","SFA_Ural_4320_Repair","SFA_Ural_4320_ZU_23_2","SFA_AGS_17","SFA_KORD","SFA_KORD_High","SFA_NSV","SFA_SPG9_M","SFA_ZU232","SFA_ZSU234V","SFA_P_37","SFA_PRV13"};
     weapons[]={"SFA_rhs_weap_ak74_rhs_acc_dtk","SFA_rhs_weap_rpg7_rhs_acc_pgo7v","SFA_rhs_weap_ak74n_rhs_acc_dtk","SFA_rhs_weap_rpg18","SFA_rhs_weap_rsp30_red","SFA_rhs_weap_akms_rhs_acc_dtkakm","SFA_rhs_weap_ak74_gp25_rhs_acc_dtk","SFA_rhs_weap_makarov_pm","SFA_rhs_weap_pkm","SFA_rhs_weap_svdp_rhs_acc_pso1m2","SFA_rhs_weap_ak74_rhs_acc_dtk1983","SFA_rhs_weap_rshg2","SFA_rhs_weap_pya","SFA_rhs_weap_aks74u_rhs_acc_pgs64_74u"};
     requiredVersion=0.1;
     requiredAddons[]={"A3_Weapons_F_Items","A3_Weapons_F","rhs_c_weapons","rhs_c_troops"};
@@ -273,6 +273,7 @@ class cfgVehicles
   class SFA_AT_Specialist: rhs_msv_at
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="AT Specialist";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -290,6 +291,7 @@ class cfgVehicles
   class SFA_Efreitor: rhs_msv_efreitor
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Efreitor";
     uniformClass="rhs_uniform_afghanka";
@@ -307,6 +309,7 @@ class cfgVehicles
   class SFA_Engineer: rhs_msv_engineer
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Engineer";
     uniformClass="rhs_uniform_afghanka";
@@ -324,6 +327,7 @@ class cfgVehicles
   class SFA_Grenadier_RPG: rhs_msv_at
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Grenadier (RPG)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -341,6 +345,7 @@ class cfgVehicles
   class SFA_Grenadier_Assistant: rhs_msv_strelok_rpg_assist
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Grenadier Assistant";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -358,6 +363,7 @@ class cfgVehicles
   class SFA_Junior_Sergeant: rhs_msv_junior_sergeant
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Junior Sergeant";
     uniformClass="rhs_uniform_afghanka";
@@ -375,6 +381,7 @@ class cfgVehicles
   class SFA_Machine_Gunner: rhs_msv_machinegunner
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Machine Gunner";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -392,6 +399,7 @@ class cfgVehicles
   class SFA_Machine_Gunner_Assistant: rhs_msv_machinegunner_assistant
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Machine Gunner Assistant";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -409,6 +417,7 @@ class cfgVehicles
   class SFA_Marksman: rhs_msv_marksman
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Marksman";
     uniformClass="rhs_uniform_afghanka";
@@ -426,6 +435,7 @@ class cfgVehicles
   class SFA_Medic: rhs_msv_medic
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Medic";
     uniformClass="rhs_uniform_afghanka";
@@ -443,6 +453,7 @@ class cfgVehicles
   class SFA_Officer: rhs_msv_officer
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Officer";
     uniformClass="rhs_uniform_afghanka";
@@ -460,6 +471,7 @@ class cfgVehicles
   class SFA_Officer_Armored: rhs_msv_officer_armored
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Officer (Armored)";
     uniformClass="rhs_uniform_afghanka";
@@ -477,6 +489,7 @@ class cfgVehicles
   class SFA_Rifleman: rhs_msv_rifleman
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Rifleman";
     uniformClass="rhs_uniform_afghanka";
@@ -494,6 +507,7 @@ class cfgVehicles
   class SFA_Rilfeman_GP25: rhs_msv_grenadier
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Rilfeman (GP-25)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -511,6 +525,7 @@ class cfgVehicles
   class SFA_Rifleman_RPG18: rhs_msv_LAT
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Rifleman (RPG-18)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -528,6 +543,7 @@ class cfgVehicles
   class SFA_Rifleman_RShG2: rhs_msv_RShG2
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Rifleman (RShG2)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -545,6 +561,7 @@ class cfgVehicles
   class SFA_Sergeant: rhs_msv_sergeant
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Sergeant";
     uniformClass="rhs_uniform_afghanka";
@@ -562,6 +579,7 @@ class cfgVehicles
   class SFA_Rifleman_Light: rhs_msv_rifleman
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Rifleman (Light)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -579,6 +597,7 @@ class cfgVehicles
   class SFA_Driver_Armored: rhs_msv_driver_armored
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Driver (Armored)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -593,9 +612,10 @@ class cfgVehicles
     backpack="";
   };
 
-  class SFA_Krew: rhs_msv_crew
+  class SFA_crew: rhs_msv_crew
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Crew";
     uniformClass="rhs_uniform_afghanka";
@@ -613,6 +633,7 @@ class cfgVehicles
   class SFA_Crew_Armored: rhs_msv_armoredcrew
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Crew (Armored)";
     uniformClass="rhs_uniform_afghanka_boots";
@@ -630,6 +651,7 @@ class cfgVehicles
   class SFA_crew_commander: rhs_msv_crew_commander
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Crew Commander";
     uniformClass="rhs_uniform_afghanka";
@@ -647,6 +669,7 @@ class cfgVehicles
   class SFA_rriver: rhs_msv_driver
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
+    category="Infantry";
     side=0;
     displayName="Driver";
     uniformClass="rhs_uniform_afghanka";
@@ -668,7 +691,7 @@ class cfgVehicles
     displayName="BTR-70";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_btr70\data\btr70_1_co.paa","rhsafrf\addons\rhs_btr70\data\btr70_2_co.paa","","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","","","","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\1_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\4_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\8_ca.paa","","","","","","","","","","",""};
     crew="SFA_rriver";
-    typicalCargo[]={"SFA_rriver"};
+    typicalCargo[]={"SFA_crew","SFA_crew"};
   };
 
   class SFA_BTR_80: rhs_btr80_msv
@@ -728,6 +751,7 @@ class cfgVehicles
     displayName="2S1";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_hull_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_turret_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","","","","","","","","","","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa","","","","","","","","","","rhsafrf\addons\rhs_decals\data\labels\platoon\romb_squared_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\romb_squared_ca.paa","","","",""};
     crew="SFA_crew_commander";
+	gunnerType = "SFA_Driver_Armored";
     typicalCargo[]={"SFA_crew_commander"};
   };
 
@@ -738,6 +762,7 @@ class cfgVehicles
     displayName="2S3M1";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_2s3\data\rhs_2s3_01_co.paa","rhsafrf\addons\rhs_2s3\data\rhs_2s3_02_co.paa","rhsafrf\addons\rhs_2s3\data\rhs_art_wheels_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\5_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\0_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa"};
     crew="SFA_crew_commander";
+	gunnerType = "SFA_Driver_Armored";
     typicalCargo[]={"SFA_crew_commander"};
   };
 
@@ -793,7 +818,7 @@ class cfgVehicles
 
   class SFA_GAZ_66: rhs_gaz66_msv
   {
-    faction="SFA_Limited_contingency_of_Soviet_Forces_(Afghanistan)";
+    faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
     side=0;
     displayName="GAZ-66";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_gaz66\data\gaz66_co.paa","rhsafrf\addons\rhs_gaz66\data\tent_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_kung_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_ap2kung_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_repkung_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\7_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\2_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\8_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\8_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
@@ -849,7 +874,7 @@ class cfgVehicles
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_gaz66\data\gaz66_co.paa","rhsafrf\addons\rhs_gaz66\data\tent_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_kung_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_ap2kung_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_repkung_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\4_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\0_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
     crew="SFA_rriver";
     typicalCargo[]={"SFA_rriver"};
-  };
+	};
 
   class SFA_GAZ_66_AP_2: rhs_gaz66_ap2_msv
   {
@@ -935,7 +960,7 @@ class cfgVehicles
   {
     faction="SFA_Limited_contingency_of_Soviet_Forces_Afghanistan";
     side=0;
-    displayName="Ural 4320 ZU 23 2";
+    displayName="Ural-4320 ZU-23-2";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_a2port_car\ural\data\ural_kabina_khk_co.paa","rhsafrf\addons\rhs_a2port_car\ural\data\ural_open_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\4_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\8_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\7_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
     crew="SFA_rriver";
     typicalCargo[]={"SFA_rriver"};
