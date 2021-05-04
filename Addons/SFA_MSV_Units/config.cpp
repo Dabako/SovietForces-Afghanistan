@@ -2,7 +2,7 @@ class cfgPatches
 {
   class Soviet_Forces_Afghanistan
   {
-    units[]={"SFA_AT_Specialist","SFA_Efreitor","SFA_Engineer","SFA_Grenadier_RPG","SFA_Grenadier_Assistant","SFA_Junior_Sergeant","SFA_Machine_Gunner","SFA_Machine_Gunner_Assistant","SFA_Marksman","SFA_Medic","SFA_Officer","SFA_Officer_Armored","SFA_Rifleman","SFA_Rilfeman_GP25","SFA_Rifleman_RPG18","SFA_Rifleman_RShG2","SFA_Sergeant","SFA_Rifleman_Light","SFA_Driver_Armored","SFA_crew","SFA_Crew_Armored","SFA_crew_commander","SFA_driver","SFA_BTR_70","SFA_BTR_80","SFA_D30A","SFA_D_30A_AT","SFA_Podnos","SFA_BM21","SFA_S1","SFA_S3M1","SFA_UAZ_3151","SFA_UAZ_3151_Open","SFA_BMP_2D","SFA_BMP_1D","SFA_BMP_2_1980g","SFA_GAZ_66","SFA_GAz_66_Ammo","SFA_GAZ_66_Flatbed","SFA_GAZ_66_OpenFlatbed","SFA_GAZ_66_R_142N","SFA_GAZ_66_ZU_23_2","SFA_GAZ_66_AP_2","SFA_GAZ_66_ESB_8IM","SFA_Ural_4320","SFA_Ural_4320_Flatbed","SFA_Ural_4320_Open","SFA_Ural_4320_Fuel","SFA_Ural_4320_Open_Flatbed","SFA_Ural_4320_Repair","SFA_Ural_4320_ZU_23_2","SFA_AGS_17","SFA_KORD","SFA_KORD_High","SFA_NSV","SFA_SPG9_M","SFA_ZU232","SFA_ZSU234V","SFA_P_37","SFA_PRV13"};
+    units[]={"SFA_AT_Specialist","SFA_Efreitor","SFA_Engineer","SFA_Grenadier_RPG","SFA_Grenadier_Assistant","SFA_Junior_Sergeant","SFA_Machine_Gunner","SFA_Machine_Gunner_Assistant","SFA_Marksman","SFA_Medic","SFA_Officer","SFA_Officer_Armored","SFA_Rifleman","SFA_Rilfeman_GP25","SFA_Rifleman_RPG18","SFA_Rifleman_RShG2","SFA_Sergeant","SFA_Rifleman_Light","SFA_Driver_Armored","SFA_crew","SFA_Crew_Armored","SFA_crew_commander","SFA_driver","SFA_BTR_70","SFA_BTR_80","SFA_D30A","SFA_D_30A_AT","SFA_Podnos","SFA_BM21","SFA_2S1","SFA_S3M1","SFA_UAZ_3151","SFA_UAZ_3151_Open","SFA_BMP_2D","SFA_BMP_1D","SFA_BMP_2_1980g","SFA_GAZ_66","SFA_GAz_66_Ammo","SFA_GAZ_66_Flatbed","SFA_GAZ_66_OpenFlatbed","SFA_GAZ_66_R_142N","SFA_GAZ_66_ZU_23_2","SFA_GAZ_66_AP_2","SFA_GAZ_66_ESB_8IM","SFA_Ural_4320","SFA_Ural_4320_Flatbed","SFA_Ural_4320_Open","SFA_Ural_4320_Fuel","SFA_Ural_4320_Open_Flatbed","SFA_Ural_4320_Repair","SFA_Ural_4320_ZU_23_2","SFA_AGS_17","SFA_KORD","SFA_KORD_High","SFA_NSV","SFA_SPG9_M","SFA_ZU232","SFA_ZSU234V","SFA_P_37","SFA_PRV13"};
     weapons[]={"SFA_rhs_weap_ak74_rhs_acc_dtk","SFA_rhs_weap_rpg7_rhs_acc_pgo7v","SFA_rhs_weap_ak74n_rhs_acc_dtk","SFA_rhs_weap_rpg18","SFA_rhs_weap_rsp30_red","SFA_rhs_weap_akms_rhs_acc_dtkakm","SFA_rhs_weap_ak74_gp25_rhs_acc_dtk","SFA_rhs_weap_makarov_pm","SFA_rhs_weap_pkm","SFA_rhs_weap_svdp_rhs_acc_pso1m2","SFA_rhs_weap_ak74_rhs_acc_dtk1983","SFA_rhs_weap_rshg2","SFA_rhs_weap_pya","SFA_rhs_weap_aks74u_rhs_acc_pgs64_74u"};
     requiredVersion=0.1;
     requiredAddons[]={"A3_Weapons_F_Items","A3_Weapons_F","rhs_c_weapons","rhs_c_troops"};
@@ -23,19 +23,19 @@ class cfgFactionClasses
 
 class cfgWeapons
 {
-  class rhs_weap_ak74;
-  class rhs_weap_rpg7;
-  class rhs_weap_ak74n;
-  class rhs_weap_rpg18;
-  class rhs_weap_rsp30_red;
-  class rhs_weap_akms;
-  class rhs_weap_ak74_gp25;
-  class rhs_weap_makarov_pm;
-  class rhs_weap_pkm;
-  class rhs_weap_svdp;
-  class rhs_weap_rshg2;
-  class rhs_weap_pya;
-  class rhs_weap_aks74u;
+  /*extern*/ class rhs_weap_ak74;
+  /*extern*/ class rhs_weap_rpg7;
+  /*extern*/ class rhs_weap_ak74n;
+  /*extern*/ class rhs_weap_rpg18;
+  /*extern*/ class rhs_weap_rsp30_red;
+  /*extern*/ class rhs_weap_akms;
+  /*extern*/ class rhs_weap_ak74_gp25;
+  /*extern*/ class rhs_weap_makarov_pm;
+  /*extern*/ class rhs_weap_pkm;
+  /*extern*/ class rhs_weap_svdp;
+  /*extern*/ class rhs_weap_rshg2;
+  /*extern*/ class rhs_weap_pya;
+  /*extern*/ class rhs_weap_aks74u;
 
   class SFA_rhs_weap_ak74_rhs_acc_dtk: rhs_weap_ak74
   {
@@ -272,17 +272,18 @@ class cfgVehicles
   /*extern*/ class Turrets;
   /*extern*/ class MainTurret;
   /*extern*/ class StaticCannon;
+  
   class SFA_2S1_base: rhs_2s1_tv
   {
-		class MainTurret: MainTurret {
-			class Turrets: Turrets {
-				class /*extern*/ CommanderOptics;
+    class Turrets: Turrets{
+		  class MainTurret: MainTurret {
+			  class Turrets: Turrets {
+				  class /*extern*/ CommanderOptics;
+        };
       };
     };
   };
     
-
-
   class SFA_AT_Specialist: rhs_msv_at
   {
     faction="Soviet_Forces_Afghanistan";
@@ -757,7 +758,7 @@ class cfgVehicles
     typicalCargo[]={"SFA_driver"};
   };
 
-  class SFA_S1: SFA_2S1_base
+  class SFA_2S1: SFA_2S1_base
   {
     faction="Soviet_Forces_Afghanistan";
     side=0;
@@ -813,7 +814,7 @@ class cfgVehicles
     side=0;
     displayName="BMP-2D";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_5_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_6_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\5_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\6_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa"};
-    crew="SFA_crew_commander";
+    crew="SFA_Crew_Armored";
     typicalCargo[]={"SFA_crew_commander"};
   };
 
@@ -823,7 +824,7 @@ class cfgVehicles
     side=0;
     displayName="BMP-1D";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_5_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_6_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\5_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\5_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\4_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa"};
-    crew="SFA_crew_commander";
+    crew="SFA_Crew_Armored";
     typicalCargo[]={"SFA_crew_commander"};
   };
 
@@ -833,7 +834,7 @@ class cfgVehicles
     side=0;
     displayName="BMP-2 (obr. 1980g.)";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_bmp\textures\bmp_1_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_2_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_3_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_4_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_5_co.paa","rhsafrf\addons\rhs_bmp\textures\bmp_6_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\6_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\7_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa","rhsafrf\addons\rhs_decals\data\labels\misc\no_ca.paa"};
-    crew="SFA_crew_commander";
+    crew="SFA_Crew_Armored";
     typicalCargo[]={"SFA_crew_commander"};
   };
 
