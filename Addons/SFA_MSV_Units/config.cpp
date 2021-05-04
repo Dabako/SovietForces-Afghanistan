@@ -1101,7 +1101,7 @@ class cfgVehicles
     typicalCargo[]={"SFA_driver"};
   };
 
-  class SFA_Ural_4320_ZU_23_2: RHS_Ural_Zu23_MSV_01
+  /* class SFA_Ural_4320_ZU_23_2: RHS_Ural_Zu23_MSV_01
   {
     faction="Soviet_Forces_Afghanistan";
     side=0;
@@ -1110,7 +1110,8 @@ class cfgVehicles
     crew="SFA_driver";
     typicalCargo[]={"SFA_driver"};
   };
-
+  */
+ 
   class SFA_AGS_17: RHS_AGS30_TriPod_MSV
   {
     faction="Soviet_Forces_Afghanistan";
