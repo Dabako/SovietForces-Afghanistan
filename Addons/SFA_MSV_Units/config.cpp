@@ -207,6 +207,7 @@ class cfgWeapons
 
 class cfgVehicles
 {
+  /*extern*/ class LandVehicle;
   /*extern*/ class rhs_msv_at;
   /*extern*/ class rhs_rpg_6b3;
   /*extern*/ class rhs_msv_efreitor;
@@ -238,7 +239,6 @@ class cfgVehicles
   /*extern*/ class rhs_D30_at_msv;
   /*extern*/ class rhs_2b14_82mm_msv;
   /*extern*/ class RHS_BM21_MSV_01;
-  /*extern*/ class rhs_2s1_tv;
   /*extern*/ class rhs_2s3_tv;
   /*extern*/ class RHS_UAZ_MSV_01;
   /*extern*/ class rhs_uaz_open_MSV_01;
@@ -265,24 +265,75 @@ class cfgVehicles
   /*extern*/ class rhs_KORD_high_MSV;
   /*extern*/ class RHS_NSV_TriPod_MSV;
   /*extern*/ class rhs_SPG9M_MSV;
-  /*extern*/ class RHS_ZU23_MSV;
   /*extern*/ class rhs_zsu234_aa;
   /*extern*/ class rhs_p37_turret_vpvo;
   /*extern*/ class rhs_prv13_turret_vpvo;
-  /*extern*/ class Turrets;
-  /*extern*/ class MainTurret;
-  /*extern*/ class StaticCannon;
-  
+
+
+  class Tank: LandVehicle {
+		/*extern*/ class NewTurret;
+	};
+
+  class Tank_F: Tank 
+  {
+		class Turrets {
+			class MainTurret: NewTurret {
+				class Turrets {
+					/*extern*/ class CommanderOptics;
+				};
+			};
+		};
+	};
+
+  class rhs_2s1tank_base: Tank_F 
+  {
+  };
+
+  class rhs_2s1_tv: rhs_2s1tank_base
+  {
+    class Turrets: Turrets {
+		  class MainTurret: MainTurret {
+	    	class Turrets: Turrets {
+					/*extern*/ class CommanderOptics;
+				};
+			};
+		};
+	};
+
   class SFA_2S1_base: rhs_2s1_tv
   {
-    class Turrets: Turrets{
-		  class MainTurret: MainTurret {
-			  class Turrets: Turrets {
-				  class /*extern*/ CommanderOptics;
-        };
-      };
-    };
   };
+
+	class StaticWeapon: LandVehicle {
+		/*extern*/ class Turrets;
+		/*extern*/ class MainTurret;
+		/*extern*/ class EventHandlers;
+	};
+
+	class StaticCannon: StaticWeapon {
+		/*extern*/ class ViewOptics;
+	};
+
+  class RHS_ZU23_base: StaticCannon 
+  {
+		/*extern*/ class CargoTurret;
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+			};
+			class CargoTurret_01: CargoTurret {
+			};
+		};
+	};
+
+  class RHS_ZU23_MSV: RHS_ZU23_base {
+    class Turrets: Turrets {
+			class MainTurret: MainTurret {
+			};
+			class CargoTurret_01: CargoTurret_01 {
+			};
+		};
+	};
+
     
   class SFA_AT_Specialist: rhs_msv_at
   {
@@ -764,13 +815,13 @@ class cfgVehicles
     side=0;
     displayName="2S1";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_hull_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_turret_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","rhsafrf\addons\rhs_2s1\data\rhs_2s1_light_suspension_co.paa","","","","","","","","","","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\3_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa","","","","","","","","","","rhsafrf\addons\rhs_decals\data\labels\platoon\romb_squared_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\romb_squared_ca.paa","","","",""};
-    crew="SFA_crew_commander";
+    crew="SFA_Crew_Armored";
     typicalCargo[]={"SFA_crew_commander"};
     class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				class Turrets: Turrets {
 					class CommanderOptics: CommanderOptics {
-            gunnerType = "SFA_Driver_Armored";
+            gunnerType = "SFA_crew_commander";
           };
         };
       };
@@ -1042,10 +1093,18 @@ class cfgVehicles
   {
     faction="Soviet_Forces_Afghanistan";
     side=0;
-    displayName="ZU232";
+    displayName="ZU23-2";
     hiddenSelectionsTextures[]={};
     crew="SFA_driver";
     typicalCargo[]={"SFA_driver"};
+    
+    class Turrets: Turrets {
+      class MainTurret: MainTurret {
+			};
+			class CargoTurret_01: CargoTurret_01 {
+				gunnerType = "SFA_crew_commander";
+			};
+		};
   };
 
   class SFA_ZSU234V: rhs_zsu234_aa
