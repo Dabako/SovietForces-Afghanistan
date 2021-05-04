@@ -239,7 +239,6 @@ class cfgVehicles
   /*extern*/ class rhs_D30_at_msv;
   /*extern*/ class rhs_2b14_82mm_msv;
   /*extern*/ class RHS_BM21_MSV_01;
-  /*extern*/ class rhs_2s3_tv;
   /*extern*/ class RHS_UAZ_MSV_01;
   /*extern*/ class rhs_uaz_open_MSV_01;
   /*extern*/ class rhs_bmp2d_msv;
@@ -250,7 +249,6 @@ class cfgVehicles
   /*extern*/ class rhs_gaz66_flat_msv;
   /*extern*/ class rhs_gaz66o_flat_msv;
   /*extern*/ class rhs_gaz66_r142_msv;
-  /*extern*/ class rhs_gaz66_zu23_msv;
   /*extern*/ class rhs_gaz66_ap2_msv;
   /*extern*/ class rhs_gaz66_repair_msv;
   /*extern*/ class RHS_Ural_MSV_01;
@@ -304,6 +302,26 @@ class cfgVehicles
   {
   };
 
+  class rhs_2s3tank_base: Tank_F
+  {
+  };
+
+  class rhs_2s3_tv: rhs_2s3tank_base
+  {
+    class Turrets: Turrets {
+		  class MainTurret: MainTurret {
+	    	class Turrets: Turrets {
+					/*extern*/ class CommanderOptics;
+				};
+			};
+		};
+	};
+
+  class SFA_2S3_base: rhs_2s3_tv
+  {
+  };
+
+
 	class StaticWeapon: LandVehicle {
 		/*extern*/ class Turrets;
 		/*extern*/ class MainTurret;
@@ -334,7 +352,47 @@ class cfgVehicles
 		};
 	};
 
-    
+  /* Crew for ZU23 Trucks */
+  class Car: LandVehicle {
+    /*extern*/ class Turrets;
+    /*extern*/ class MainTurret;
+		/*extern*/ class EventHandlers;
+  };
+
+  class Car_F: Car {
+  };
+
+  class Truck_F: Car_F {
+  };
+
+  class rhs_truck: Truck_F {
+  };
+
+  class rhs_gaz66_vmf: rhs_truck {
+  };
+  
+  class rhs_gaz66_zu23_base: rhs_gaz66_vmf {
+    /*extern*/ class CargoTurret;
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+			};
+			class CargoTurret_01: CargoTurret {
+			};
+		};
+  };
+
+  class rhs_gaz66_zu23_msv: rhs_gaz66_zu23_base {
+    class Turrets: Turrets {
+			class MainTurret: MainTurret {
+			};
+			class CargoTurret_01: CargoTurret_01 {
+			};
+		};
+  }; 
+
+
+  /* Infantry*/
+
   class SFA_AT_Specialist: rhs_msv_at
   {
     faction="Soviet_Forces_Afghanistan";
@@ -756,7 +814,6 @@ class cfgVehicles
     displayName="BTR-70";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_btr70\data\btr70_1_co.paa","rhsafrf\addons\rhs_btr70\data\btr70_2_co.paa","","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","","","","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\1_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\4_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\8_ca.paa","","","","","","","","","","",""};
     crew="SFA_Crew_Armored";
-    typicalCargo[]={"SFA_crew","SFA_crew"};
   };
 
   class SFA_BTR_80: rhs_btr80_msv
@@ -766,7 +823,6 @@ class cfgVehicles
     displayName="BTR-80";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_btr80_camo\data\rhs_btr80_01_tri01_co.paa","rhsafrf\addons\rhs_btr80_camo\data\rhs_btr80_02_tri01_co.paa","rhsafrf\addons\rhs_btr80_camo\data\rhs_btr80_03_tri01_co.paa","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","rhsafrf\addons\rhs_btr70\habar\data\sa_gear_02_co.paa","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","","","","","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\8_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\0_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\defaultred\5_ca.paa","","","","","","","","","","",""};
     crew="SFA_Crew_Armored";
-    typicalCargo[]={"SFA_driver"};
   };
 
   class SFA_D30A: rhs_D30_msv
@@ -828,15 +884,23 @@ class cfgVehicles
     };
   };
 
-  class SFA_S3M1: rhs_2s3_tv
+  class SFA_S3M1: SFA_2S3_base
   {
     faction="Soviet_Forces_Afghanistan";
     side=0;
     displayName="2S3M1";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_2s3\data\rhs_2s3_01_co.paa","rhsafrf\addons\rhs_2s3\data\rhs_2s3_02_co.paa","rhsafrf\addons\rhs_2s3\data\rhs_art_wheels_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\5_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\0_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\1_ca.paa"};
-    crew="SFA_crew_commander";
-	 gunnerType = "SFA_Driver_Armored";
+    crew="SFA_crew_Armored";
     typicalCargo[]={"SFA_crew_commander"};
+    class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				class Turrets: Turrets {
+					class CommanderOptics: CommanderOptics {
+            gunnerType = "SFA_crew_commander";
+          };
+        };
+      };
+    };
   };
 
   class SFA_UAZ_3151: RHS_UAZ_MSV_01
@@ -947,6 +1011,14 @@ class cfgVehicles
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_gaz66\data\gaz66_co.paa","rhsafrf\addons\rhs_gaz66\data\tent_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_kung_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_ap2kung_co.paa","rhsafrf\addons\rhs_gaz66\data\rhs_gaz66_repkung_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\9_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\4_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\0_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","rhsafrf\addons\rhs_decals\data\labels\platoon\18th_msv_ca.paa","",""};
     crew="SFA_driver";
     typicalCargo[]={"SFA_driver"};
+    class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				gunnerType = "SFA_crew";
+			};
+			class CargoTurret_01: CargoTurret_01 {
+				gunnerType = "SFA_crew_commander";
+			};
+		};
 	};
 
   class SFA_GAZ_66_AP_2: rhs_gaz66_ap2_msv
@@ -1095,7 +1167,7 @@ class cfgVehicles
     side=0;
     displayName="ZU23-2";
     hiddenSelectionsTextures[]={};
-    crew="SFA_driver";
+    crew="SFA_crew_Armored";
     typicalCargo[]={"SFA_driver"};
     
     class Turrets: Turrets {
@@ -1113,7 +1185,7 @@ class cfgVehicles
     side=0;
     displayName="ZSU234V";
     hiddenSelectionsTextures[]={"rhsafrf\addons\rhs_a2port_armor\data\zsu_01_co.paa","rhsafrf\addons\rhs_a2port_armor\data\zsu_02_co.paa","rhsafrf\addons\rhs_a2port_armor\data\zsu_03_co.paa","rhsafrf\addons\rhs_decals\data\numbers\default\7_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\6_ca.paa","rhsafrf\addons\rhs_decals\data\numbers\default\0_ca.paa"};
-    crew="SFA_crew_commander";
+    crew="SFA_crew_Armored";
     typicalCargo[]={"SFA_crew_commander"};
   };
 
