@@ -1,8 +1,8 @@
 class cfgPatches
 {
-  class sfa_msv_Units
+  class sfa_msv_units
   {
-    units[]={"sfa_at_specialist","sfa_efreitor","sfa_engineer","sfa_grenadier_rpg","sfa_grenadier_assistant","sfa_junior_sergeant","sfa_machine_gunner","sfa_machine_gunner_assistant","sfa_marksman","sfa_medic","sfa_officer","sfa_officer_armored","sfa_rifleman","sfa_rifleman_gp25","sfa_rifleman_rpg18","sfa_rifleman_rshg2","sfa_sergeant","sfa_rifleman_light","sfa_driver_armored","sfa_crew","sfa_crew_armored","sfa_crew_commander","sfa_driver","SFA_BTR_70","SFA_BTR_80","SFA_D30A","SFA_D_30A_AT","SFA_Podnos","SFA_BM21","SFA_2S1","SFA_S3M1","SFA_UAZ_3151","SFA_UAZ_3151_Open","SFA_BMP_2D","SFA_BMP_1D","SFA_BMP_2_1980g","SFA_GAZ_66","SFA_GAz_66_Ammo","SFA_GAZ_66_Flatbed","SFA_GAZ_66_OpenFlatbed","SFA_GAZ_66_R_142N","SFA_GAZ_66_ZU_23_2","SFA_GAZ_66_AP_2","SFA_GAZ_66_ESB_8IM","SFA_Ural_4320","SFA_Ural_4320_Flatbed","SFA_Ural_4320_Open","SFA_Ural_4320_Fuel","SFA_Ural_4320_Open_Flatbed","SFA_Ural_4320_Repair","SFA_Ural_4320_ZU_23_2","SFA_AGS_17","SFA_KORD","SFA_KORD_High","SFA_NSV","SFA_SPG9_M","SFA_ZU232","SFA_ZSU234V","SFA_P_37","SFA_PRV13"};
+    units[]={"sfa_at_specialist","sfa_efreitor","sfa_engineer","sfa_grenadier_rpg","sfa_grenadier_assistant","sfa_junior_sergeant","sfa_machine_gunner","sfa_machine_gunner_assistant","sfa_marksman","sfa_medic","sfa_officer","sfa_officer_armored","sfa_rifleman","sfa_rifleman_gp25","sfa_rifleman_rpg18","sfa_rifleman_rshg2","sfa_sergeant","sfa_rifleman_light","sfa_driver_armored","sfa_crew","sfa_crew_armored","sfa_crew_commander","sfa_driver","SFA_BTR_70","SFA_BTR_80","SFA_D30A","SFA_D_30A_AT","SFA_Podnos","SFA_BM21","SFA_2S1","SFA_S3M1","SFA_UAZ_3151","SFA_UAZ_3151_Open","SFA_BMP_2D","SFA_BMP_1D","SFA_BMP_2_1980g","SFA_GAZ_66","SFA_GAz_66_Ammo","SFA_GAZ_66_Flatbed","SFA_GAZ_66_OpenFlatbed","SFA_GAZ_66_R_142N","SFA_GAZ_66_ZU_23_2","SFA_GAZ_66_AP_2","SFA_GAZ_66_ESB_8IM","SFA_Ural_4320","SFA_Ural_4320_Flatbed","SFA_Ural_4320_Open","SFA_Ural_4320_Fuel","SFA_Ural_4320_Open_Flatbed","SFA_Ural_4320_Repair","SFA_Ural_4320_ZU_23_2","SFA_AGS_17","SFA_KORD","SFA_KORD_High","SFA_NSV","SFA_SPG9_M","SFA_ZU232","SFA_ZSU234V","SFA_P_37","SFA_PRV13","sfa_at_specialist_w","sfa_efreitor_w","sfa_engineer_w","sfa_grenadier_rpg_w","sfa_grenadier_assistant_w","sfa_junior_sergeant_w","sfa_machine_gunner_w","sfa_machine_gunner_assistant_w","sfa_marksman_w","sfa_medic_w","sfa_officer_w","sfa_officer_armored_w","sfa_rifleman_w","sfa_rifleman_gp25_w","sfa_rifleman_rpg18_w","sfa_rifleman_rshg2_w","sfa_sergeant_w","sfa_rifleman_light_w"};
     weapons[]={"SFA_rhs_weap_ak74_rhs_acc_dtk","SFA_rhs_weap_rpg7_rhs_acc_pgo7v","SFA_rhs_weap_ak74n_rhs_acc_dtk","SFA_rhs_weap_rpg18","SFA_rhs_weap_rsp30_red","SFA_rhs_weap_akms_rhs_acc_dtkakm","SFA_rhs_weap_ak74_gp25_rhs_acc_dtk","SFA_rhs_weap_makarov_pm","SFA_rhs_weap_pkm","SFA_rhs_weap_svdp_rhs_acc_pso1m2","SFA_rhs_weap_ak74_rhs_acc_dtk1983","SFA_rhs_weap_rshg2","SFA_rhs_weap_pya","SFA_rhs_weap_aks74u_rhs_acc_pgs64_74u"};
     requiredVersion=0.1;
     requiredAddons[]={"A3_Weapons_F_Items","A3_Weapons_F","rhs_c_weapons","rhs_c_troops"};
@@ -26,6 +26,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Infantry (Summer)"; // Name visible in the list
 	};
+  class EdSubcat_SFA_Infantry_Winter
+  {
+    displayName = "Infantry (Winter)";
+  };
 };
 
 
@@ -626,7 +630,7 @@ class cfgVehicles
     respawnWeapons[]={"Binocular","SFA_rhs_weap_ak74_rhs_acc_dtk","SFA_rhs_weap_makarov_pm","Put","Throw"};
     items[]={"FirstAidKit"};
     respawnItems[]={"FirstAidKit"};
-    headgearList[] = {"rhs_ssh68_2"};
+    headgearList[] = {"rhs_fieldcap_m88"};
     magazines[]={"rhs_mag_rdg2_white","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_30Rnd_545x39_7N6M_AK"};
     respawnMagazines[]={"rhs_mag_rdg2_white","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_30Rnd_545x39_7N6M_AK"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_fieldcap_m88","rhs_gear_OFF"};
@@ -773,7 +777,7 @@ class cfgVehicles
     respawnWeapons[]={"SFA_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
     items[]={"FirstAidKit"};
     respawnItems[]={"FirstAidKit"};
-    headgearList[] = {"rhs_ssh68_2"};
+    headgearList[] = {"rhs_fieldcap_m88"};
     magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK"};
     respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK"};
     linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_fieldcap_m88","rhs_belt_AK"};
@@ -880,6 +884,452 @@ class cfgVehicles
     respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_fieldcap_m88","rhs_belt_AK4"};
     backpack="";
   };
+
+  // Infantry Winter //
+
+    class sfa_at_specialist_w: rhs_msv_at
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_at_specialist_w.jpg";
+    side=0;
+    displayName="AT Specialist";
+    uniformClass="rhs_uniform_afghanka_winter_boots";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_rpg7_rhs_acc_pgo7v","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_rpg7_rhs_acc_pgo7v","Put","Throw"};
+    items[]={"FirstAidKit","FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit","FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_rpg7_PG7VL_mag","rhs_rpg7_PG7VL_mag","rhs_rpg7_OG7V_mag"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_rpg7_PG7VL_mag","rhs_rpg7_PG7VL_mag","rhs_rpg7_OG7V_mag"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    backpack="sfa_at_specialist_w_pack";
+  };
+
+  class sfa_efreitor_w: rhs_msv_efreitor
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_efreitor_w.jpg";
+    side=0;
+    displayName="Efreitor";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74n_rhs_acc_dtk","sfa_rhs_weap_rpg18","sfa_rhs_weap_rsp30_red","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74n_rhs_acc_dtk","sfa_rhs_weap_rpg18","sfa_rhs_weap_rsp30_red","Put","Throw"};
+    items[]={"FirstAidKit","FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit","FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK_2"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK_2"};
+    backpack="";
+  };
+
+  class sfa_engineer_w: rhs_msv_engineer
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_engineer_w.jpg";
+    side=0;
+    displayName="Engineer";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_akms_rhs_acc_dtkakm","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_akms_rhs_acc_dtkakm","Put","Throw"};
+    items[]={"FirstAidKit","FirstAidKit","ToolKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit","FirstAidKit","ToolKit"};
+    magazines[]={"rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_ec200_sand_mag","rhs_ec200_sand_mag"};
+    respawnMagazines[]={"rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_30Rnd_762x39mm","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_ec200_sand_mag","rhs_ec200_sand_mag"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_RPK"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_RPK"};
+    backpack="sfa_engineer_w_pack";
+  };
+
+  class sfa_grenadier_rpg_w: rhs_msv_at
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_grenadier_rpg_w.jpg";
+    side=0;
+    displayName="Grenadier (RPG)";
+    uniformClass="rhs_uniform_afghanka_winter_boots";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_rpg7_rhs_acc_pgo7v","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_rpg7_rhs_acc_pgo7v","Put","Throw"};
+    items[]={"FirstAidKit","FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit","FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_rpg7_OG7V_mag","rhs_rpg7_OG7V_mag","rhs_rpg7_OG7V_mag"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_rpg7_OG7V_mag","rhs_rpg7_OG7V_mag","rhs_rpg7_OG7V_mag"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    backpack="sfa_grenadier_rpg_w_pack";
+  };
+
+  class sfa_grenadier_assistant_w: rhs_msv_strelok_rpg_assist
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_grenadier_assistant_w.jpg";
+    side=0;
+    displayName="Grenadier Assistant";
+    uniformClass="rhs_uniform_afghanka_winter_boots";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    items[]={"FirstAidKit","FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit","FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK_3"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK_3"};
+    backpack="sfa_grenadier_assistant_w_pack";
+  };
+
+  class sfa_junior_sergeant_w: rhs_msv_junior_sergeant
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_junior_sergeant_w.jpg";
+    side=0;
+    displayName="Junior Sergeant";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_gp25_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_gp25_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_GRD40_Green","rhs_GRD40_Red","rhs_VG40OP_white","rhs_VG40OP_green","rhs_mag_rgd5","rhs_mag_rgd5"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_GRD40_Green","rhs_GRD40_Red","rhs_VG40OP_white","rhs_VG40OP_green","rhs_mag_rgd5","rhs_mag_rgd5"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_VOG_2"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_VOG_2"};
+    backpack="";
+  };
+
+  class sfa_machine_gunner_w: rhs_msv_machinegunner
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_machine_gunner_w.jpg";
+    side=0;
+    displayName="Machine Gunner";
+    uniformClass="rhs_uniform_afghanka_winter_boots";
+    weapons[]={"Binocular","sfa_rhs_weap_pkm","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_pkm","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_mag_rgn","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
+    respawnMagazines[]={"rhs_mag_rgn","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_RPK"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_RPK"};
+    backpack="sfa_machine_gunner_w_pack";
+  };
+
+  class sfa_machine_gunner_assistant_w: rhs_msv_machinegunner_assistant
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_machine_gunner_assistant_w.jpg";
+    side=0;
+    displayName="Machine Gunner Assistant";
+    uniformClass="rhs_uniform_afghanka_winter_boots";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","rhs_100Rnd_762x54mmR","rhs_100Rnd_762x54mmR"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    backpack="sfa_machine_gunner_assistant_w_pack";
+  };
+
+  class sfa_marksman_w: rhs_msv_marksman
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_marksman_w.jpg";
+    side=0;
+    displayName="Marksman";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_svdp_rhs_acc_pso1m2","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_svdp_rhs_acc_pso1m2","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_rdg2_white","rhs_mag_rdg2_white"};
+    respawnMagazines[]={"rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_10Rnd_762x54mmR_7N1","rhs_mag_rdg2_white","rhs_mag_rdg2_white"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b2_SVD"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b2_SVD"};
+    backpack="";
+  };
+
+  class sfa_medic_w: rhs_msv_medic
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_medic_w.jpg";
+    side=0;
+    displayName="Medic";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    items[]={"FirstAidKit","Medikit","FirstAidKit","FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit","Medikit","FirstAidKit","FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK"};
+    backpack="sfa_medic_w_pack";
+  };
+
+  class sfa_officer_w: rhs_msv_officer
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_officer_w.jpg";
+    side=0;
+    displayName="Officer";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ushanka"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_mag_rdg2_white","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_30Rnd_545x39_7N6M_AK"};
+    respawnMagazines[]={"rhs_mag_rdg2_white","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_30Rnd_545x39_7N6M_AK"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ushanka","rhs_gear_OFF"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ushanka","rhs_gear_OFF"};
+    backpack="";
+  };
+
+  class sfa_officer_armored_w: rhs_msv_officer_armored
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_officer_armored_w.jpg";
+    side=0;
+    displayName="Officer (Armored)";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_9x18_8_57N181S","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_off"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_off"};
+    backpack="";
+  };
+
+  class sfa_rifleman_w: rhs_msv_rifleman
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_rifleman_w.jpg";
+    side=0;
+    displayName="Rifleman";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK_2"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_AK_2"};
+    backpack="";
+  };
+
+  class sfa_rifleman_gp25_w: rhs_msv_grenadier
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_rifleman_gp25_w.jpg";
+    side=0;
+    displayName="Rifleman (GP-25)";
+    uniformClass="rhs_uniform_afghanka_winter_boots";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_gp25_rhs_acc_dtk","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_gp25_rhs_acc_dtk","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_VG40OP_green","rhs_VG40OP_red","rhs_GRD40_Green","rhs_GRD40_Red","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_VG40OP_green","rhs_VG40OP_red","rhs_GRD40_Green","rhs_GRD40_Red","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_mag_rgd5","rhs_mag_rgd5"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_VOG"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_VOG"};
+    backpack="";
+  };
+
+  class sfa_rifleman_rpg18_w: rhs_msv_LAT
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_rifleman_rpg18_w.jpg";
+    side=0;
+    displayName="Rifleman (RPG-18)";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_rpg18","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk","sfa_rhs_weap_rpg18","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_mag_rdg2_white"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_mag_rdg2_white"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    backpack="";
+  };
+
+  class sfa_rifleman_rshg2_w: rhs_msv_RShG2
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_rifleman_rshg2_w.jpg";
+    side=0;
+    displayName="Rifleman (RshG2)";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk1983","sfa_rhs_weap_rshg2","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_rhs_acc_dtk1983","sfa_rhs_weap_rshg2","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_mag_rdg2_white"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5","rhs_mag_rgd5","rhs_mag_rdg2_white","rhs_mag_rdg2_white"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3"};
+    backpack="";
+  };
+
+  class sfa_sergeant_w: rhs_msv_sergeant
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_sergeant_w.jpg";
+    side=0;
+    displayName="Sergeant";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"Binocular","sfa_rhs_weap_ak74_gp25_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    respawnWeapons[]={"Binocular","sfa_rhs_weap_ak74_gp25_rhs_acc_dtk","sfa_rhs_weap_makarov_pm","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ssh68_2"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_9x18_8_57N181S","rhs_mag_rdg2_white","rhs_mag_rdg2_white","rhs_VOG25","rhs_VOG25","rhs_VOG25","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgd5"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_off"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","Binocular","rhs_ssh68_2","rhs_6b3_off"};
+    backpack="";
+  };
+
+  class sfa_rifleman_light_w: rhs_msv_rifleman
+  {
+    faction="Soviet_Forces_Afghanistan";
+    editorSubcategory="EdSubcat_SFA_Infantry_Winter";
+    editorPreview="sfa\addons\sfa_msv_units\data\sfa_rifleman_light_w.jpg";
+    side=0;
+    displayName="Rifleman (Light)";
+    uniformClass="rhs_uniform_afghanka_winter";
+    weapons[]={"sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    respawnWeapons[]={"sfa_rhs_weap_ak74_rhs_acc_dtk","Put","Throw"};
+    items[]={"FirstAidKit"};
+    headgearList[] = {"rhs_ushanka"};
+    respawnItems[]={"FirstAidKit"};
+    magazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK"};
+    respawnMagazines[]={"rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK","rhs_mag_rgn","rhs_mag_rgn","rhs_30Rnd_545x39_7N6M_AK","rhs_30Rnd_545x39_7N6M_AK"};
+    linkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_ushanka","rhs_belt_AK"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","ItemWatch","ItemRadio","rhs_ushanka","rhs_belt_AK"};
+    backpack="";
+  };
+
+  class sfa_at_specialist_w_pack: rhs_rpg_6b3
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_rhs_rpg7_PG7VL_mag {count=2;magazine="rhs_rpg7_PG7VL_mag";};
+     class _xx_rhs_rpg7_OG7V_mag {count=1;magazine="rhs_rpg7_OG7V_mag";};
+    };
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class sfa_engineer_w_pack: rhs_sidor
+  {
+    scope=1;
+    class TransportMagazines{};
+    class TransportItems
+    {
+     class _xx_ToolKit {count=1;name="ToolKit";};
+    };
+    class TransportWeapons{};
+  };
+
+
+  class sfa_grenadier_rpg_w_pack: rhs_rpg_6b3
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_rhs_rpg7_OG7V_mag {count=3;magazine="rhs_rpg7_OG7V_mag";};
+    };
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class sfa_grenadier_assistant_w_pack: rhs_rpg_6b3
+  {
+    scope=1;
+    class TransportMagazines{};
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class sfa_machine_gunner_w_pack: rhs_sidorMG
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_rhs_100Rnd_762x54mmR {count=2;magazine="rhs_100Rnd_762x54mmR";};
+    };
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class sfa_machine_gunner_assistant_w_pack: rhs_sidorMG
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_rhs_100Rnd_762x54mmR {count=2;magazine="rhs_100Rnd_762x54mmR";};
+    };
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class sfa_medic_w_pack: rhs_medic_bag
+  {
+    scope=1;
+    class TransportMagazines{};
+    class TransportItems
+    {
+     class _xx_Medikit {count=1;name="Medikit";};
+     class _xx_FirstAidKit {count=2;name="FirstAidKit";};
+    };
+    class TransportWeapons{};
+  };
+
+  // Vehicles //
 
   class SFA_BTR_70: rhs_btr70_msv
   {
@@ -1368,5 +1818,7 @@ class cfgVehicles
   };
 
 };
+
+// Infantry Winter //
 
 //////////////// Paste cfgGroups after this line //////////////// 
