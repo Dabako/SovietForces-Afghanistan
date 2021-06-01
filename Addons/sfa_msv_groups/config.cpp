@@ -13,9 +13,9 @@ class cfgGroups
   class EAST
   {
     name="OPFOR";
-    class Soviet_Armed_Forces
+    class Soviet_Forces_Afghanistan
     {
-      name="Soviet Armed Forces";
+      name="Soviet Forces Afghanistan";
 
       class Infantry
       {
@@ -24,7 +24,7 @@ class cfgGroups
         class sfa_O_Rifle_Squad
         {
           name="Rifle Squad";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -72,7 +72,7 @@ class cfgGroups
         class sfa_O_Company_HQ
         {
           name="Company HQ";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -106,7 +106,7 @@ class cfgGroups
         class sfa_O_Fireteam
         {
           name="Fireteam";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -140,7 +140,7 @@ class cfgGroups
         class sfa_O_Maneuver_Team
         {
           name="Maneuver Team";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -167,7 +167,7 @@ class cfgGroups
         class sfa_O_Section_AT
         {
           name="Section AT";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -208,7 +208,7 @@ class cfgGroups
         class sfa_O_Section_Marksman
         {
           name="Section Marksman";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -249,7 +249,7 @@ class cfgGroups
         class sfa_O_Section_MG
         {
           name="Section MG";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -290,7 +290,7 @@ class cfgGroups
         class sfa_O_Squad
         {
           name="Squad";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -366,7 +366,7 @@ class cfgGroups
         class sfa_O_Squad_2gpmg
         {
           name="Squad (2x GPMG)";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -421,7 +421,7 @@ class cfgGroups
         class sfa_O_Squad_gpmg_marksman
         {
           name="Squad (GPMG + Marksman)";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -476,7 +476,7 @@ class cfgGroups
         class sfa_O_Squad_Marksman
         {
           name="Squad Marksman";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -536,7 +536,7 @@ class cfgGroups
         class sfa_O_Rifle_Squad_w
         {
           name="Rifle Squad";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -584,7 +584,7 @@ class cfgGroups
         class sfa_O_Company_HQ_w
         {
           name="Company HQ";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -618,7 +618,7 @@ class cfgGroups
         class sfa_O_Fireteam_w
         {
           name="Fireteam";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -652,7 +652,7 @@ class cfgGroups
         class sfa_O_Maneuver_Team_w
         {
           name="Maneuver Team";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -679,7 +679,7 @@ class cfgGroups
         class sfa_O_Section_AT_w
         {
           name="Section AT";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -720,7 +720,7 @@ class cfgGroups
         class sfa_O_Section_Marksman_w
         {
           name="Section Marksman";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -761,7 +761,7 @@ class cfgGroups
         class sfa_O_Section_MG_w
         {
           name="Section MG";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -802,7 +802,7 @@ class cfgGroups
         class sfa_O_Squad_w
         {
           name="Squad";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -878,7 +878,7 @@ class cfgGroups
         class sfa_O_Squad_gpmg_w
         {
           name="Squad 2xGPMG";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {
@@ -933,7 +933,7 @@ class cfgGroups
         class sfa_O_Squad_gpmg_marksman_w
         {
           name="Squad (GPMG + Marksman)";
-          faction="sfa_Soviet_Armed_Forces";
+          faction="Soviet_Forces_Afghanistan";
           side=0;
           class Unit0
           {

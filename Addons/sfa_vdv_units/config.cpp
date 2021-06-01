@@ -671,3 +671,528 @@ class cfgVehicles
 };
 
 //////////////// Paste cfgGroups after this line //////////////// 
+
+class cfgGroups
+{  
+  class EAST
+  {
+    name="OPFOR";
+    class Soviet_Forces_Afghanistan
+    {
+      name="Soviet Forces Afghanistan";
+
+      class Infantry_vdv
+      {
+        name="Infantry (VDV)";
+
+        class sfa_O_Company_HQ_vdv
+        {
+          name="Company HQ";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_officer_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_officer_armored_vdv";
+            rank="PRIVATE";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_officer_armored_vdv";
+            rank="CORPORAL";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+        };
+        class sfa_O_Fireteam_vdv
+        {
+          name="Fireteam";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_grenadier_rpg_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_grenadier_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+        };
+        class sfa_O_Maneuver_Team_vdv
+        {
+          name="Maneuver Team";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_efreitor_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+        };
+        class sfa_O_Rifle_Squad_vdv
+        {
+          name="Rifle Squad";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_grenadier_rpg_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_marksman_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_grenadier_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+          class Unit5
+          {
+            side=0;
+            vehicle="sfa_rifleman_rpg18_vdv";
+            rank="PRIVATE";
+            position[]={0,-25,0};
+          };
+        };
+        class sfa_O_Section_AT_vdv
+        {
+          name="Section AT";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_junior_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_at_specialist_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_grenadier_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_rifleman_rpg18_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+        };
+        class sfa_O_Section_Marksman_vdv
+        {
+          name="Section Marksman ";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_junior_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_rifleman_gp25_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_marksman_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+        };
+        class sfa_O_Section_MG_vdv
+        {
+          name="Section MG";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_junior_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_rifleman_gp25_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+        };
+        class sfa_O_Squad_vdv
+        {
+          name="Squad";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_efreitor_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_grenadier_rpg_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_grenadier_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+          class Unit5
+          {
+            side=0;
+            vehicle="sfa_rifleman_rpg18_vdv";
+            rank="PRIVATE";
+            position[]={0,-25,0};
+          };
+          class Unit6
+          {
+            side=0;
+            vehicle="sfa_grenadier_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+          class Unit7
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-35,0};
+          };
+          class Unit8
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-40,0};
+          };
+          class Unit9
+          {
+            side=0;
+            vehicle="sfa_medic_vdv";
+            rank="PRIVATE";
+            position[]={0,-45,0};
+          };
+        };
+        class sfa_O_Squad_2gpmg_vdv
+        {
+          name="Squad (2x GPMG)";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_efreitor_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_junior_sergeant_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+          class Unit5
+          {
+            side=0;
+            vehicle="sfa_rifleman_rpg18_vdv";
+            rank="PRIVATE";
+            position[]={0,-25,0};
+          };
+          class Unit6
+          {
+            side=0;
+            vehicle="sfa_medic_vdv";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+        };
+        class sfa_O_Squad_gpmg_marksman_vdv
+        {
+          name="Squad (GPMG + Marksman)";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_rifleman_rshg2_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_junior_sergeant_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_assistant_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_medic_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+          class Unit5
+          {
+            side=0;
+            vehicle="sfa_marksman_vdv";
+            rank="PRIVATE";
+            position[]={0,-25,0};
+          };
+          class Unit6
+          {
+            side=0;
+            vehicle="sfa_rifleman_rpg18_vdv";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+        };
+        class sfa_O_Squad_Marksman_vdv
+        {
+          name="Squad Marksman";
+          faction="Soviet_Forces_Afghanistan";
+          side=0;
+          class Unit0
+          {
+            side=0;
+            vehicle="sfa_junior_sergeant_vdv";
+            rank="SERGEANT";
+            position[]={0,-0,0};
+          };
+          class Unit1
+          {
+            side=0;
+            vehicle="sfa_engineer_vdv";
+            rank="CORPORAL";
+            position[]={0,-5,0};
+          };
+          class Unit2
+          {
+            side=0;
+            vehicle="sfa_marksman_vdv";
+            rank="PRIVATE";
+            position[]={0,-10,0};
+          };
+          class Unit3
+          {
+            side=0;
+            vehicle="sfa_rifleman_vdv";
+            rank="PRIVATE";
+            position[]={0,-15,0};
+          };
+          class Unit4
+          {
+            side=0;
+            vehicle="sfa_machine_gunner_vdv";
+            rank="PRIVATE";
+            position[]={0,-20,0};
+          };
+          class Unit5
+          {
+            side=0;
+            vehicle="sfa_at_specialist_vdv";
+            rank="PRIVATE";
+            position[]={0,-25,0};
+          };
+          class Unit6
+          {
+            side=0;
+            vehicle="sfa_medic_vdv";
+            rank="PRIVATE";
+            position[]={0,-30,0};
+          };
+        };
+      };
+    };
+  };
+};
