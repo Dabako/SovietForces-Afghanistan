@@ -2,7 +2,7 @@
 
 This little faction Mod, adds preset´s for soviet forces of the Soviet-Afghan War. They are based of RHSAFRF.
 
-The Editor Preview Pictures were made with this Tutorial[Eden Editor: Configuring Asset Previews](https://community.bistudio.com/wiki/Eden_Editor:_Configuring_Asset_Previews)
+The Editor Preview Pictures were made with this Tutorial [Eden Editor: Configuring Asset Previews](https://community.bistudio.com/wiki/Eden_Editor:_Configuring_Asset_Previews)
 
 
 #### This Mods contains:
